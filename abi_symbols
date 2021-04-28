@@ -1,0 +1,11 @@
+libopenaptx.so.0:aptx_decode
+libopenaptx.so.0:aptx_decode_sync
+libopenaptx.so.0:aptx_decode_sync_finish
+libopenaptx.so.0:aptx_encode
+libopenaptx.so.0:aptx_encode_finish
+libopenaptx.so.0:aptx_finish
+libopenaptx.so.0:aptx_init
+libopenaptx.so.0:aptx_major
+libopenaptx.so.0:aptx_minor
+libopenaptx.so.0:aptx_patch
+libopenaptx.so.0:aptx_reset

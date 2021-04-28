@@ -1,0 +1,22 @@
+name       : libopenaptx
+version    : 0.2.1
+release    : 1
+source     :
+    - https://github.com/pali/libopenaptx/releases/download/0.2.1/libopenaptx-0.2.1.tar.gz : f13eac1ebfe31a563943cd47819eece1109960e10a1e85c111975bcfd37d5361
+homepage   : https://ffmpeg.org
+license    : GPL-3.0-or-later
+component  : multimedia.codecs
+summary    : Open Source aptX codec library
+description: |
+    Open Source implementation of Audio Processing Technology codec
+environment: |
+    export PREFIX=/usr
+setup      : |
+    sed -i "s|PREFIX |&?|" Makefile
+    sed -i "s|CFLAGS |&?|" Makefile
+    sed -i "s|LDFLAGS |&?|" Makefile
+build      : |
+    %make
+install    : |
+    %make_install
+    rm $installdir/usr/lib/*.a
